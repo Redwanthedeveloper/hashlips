@@ -6,7 +6,7 @@ module.exports = {
       default: '#fff',
       black: '#000',
       primary: '#7f18bb',
-      secondary: '#ffed4a',
+      secondary: '#b22fff',
       danger: '#e3342f',
     },
     ringColor: {

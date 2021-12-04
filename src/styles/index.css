@@ -80,6 +80,15 @@ body {
   margin: 0px;
 }
 
+.hero::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #00000087;
+  z-index: 1;
+}
+
 .hero__image {
   position: absolute;
   inset: 0px;
