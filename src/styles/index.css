@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Button */
+.btn-gradient {
+  background: linear-gradient(270deg, #ff9dff, #00fbf5);
+}
+
+.btn-bg-gradient {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, #7f18bb, #35249b);
+}
+
+.btn-bg-gradient:after,
+.btn-bg-gradient:before {
+  padding: 18px 0 11px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(-100% - 30px);
+  height: 100%;
+  width: calc(100% + 20px);
+  color: #fff;
+  border-radius: 2px;
+  transform: skew(-25deg);
+}
+
+.btn-bg-gradient:before {
+  background: linear-gradient(90deg, #7f18bb, #35249b);
+  z-index: 5;
+  transition: left 0.9s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.btn-bg-gradient:after {
+  background: #fff;
+  transition: left 0.5s cubic-bezier(0.86, 0, 0.07, 1) 0.2s;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.btn-bg-gradient:hover:before {
+  left: calc(0% - 10px);
+  transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.btn-bg-gradient:hover:after {
+  left: calc(0% - 10px);
+  transition: left 0.9s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.btn-bg-gradient span {
+  z-index: 10;
+}
+
+/* Hero */
+.hero__bg {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.hero__image {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* About */
+.grid__image {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.label-title {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgba(153, 153, 153, var(--tw-text-opacity));
+}
+
+.label-line {
+  margin-left: 1.75rem;
+  display: block;
+  height: 1px;
+  width: 8.4375rem;
+  background: rgba(153, 153, 153, var(--tw-border-opacity));
+}
+.text-gray {
+  --tw-text-opacity: 1;
+  color: rgba(153, 153, 153, var(--tw-text-opacity));
+}
+.bcm strong {
+  font-weight: inherit;
+}
+
+.bcm strong,
+.prose {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
