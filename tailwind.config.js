@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     textColor: {
       default: '#fff',
+      black: '#000',
       primary: '#7f18bb',
       secondary: '#ffed4a',
       danger: '#e3342f',
@@ -11,7 +12,7 @@ module.exports = {
     ringColor: {
       primary: '#7f18bb',
     },
-    backgroundColor: (theme) => ({  
+    backgroundColor: (theme) => ({
       ...theme('colors'),
       default: '#fff',
       primary: '#3490dc',
